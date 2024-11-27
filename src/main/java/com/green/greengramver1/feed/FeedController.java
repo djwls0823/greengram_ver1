@@ -33,7 +33,7 @@ public class FeedController {
     }
 
     /*
-        QueryString - URL에 KEY, VALUE 값을 포함한다.
+         QueryString - URL에 KEY, VALUE 값을 포함한다.
      */
     @GetMapping
     public ResultResponse<List<FeedGetRes>> getFeedList(@ParameterObject @ModelAttribute FeedGetReq p)   {
