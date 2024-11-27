@@ -1,0 +1,32 @@
+# custom property (절대경로 Absolute Path)
+file:
+  directory: D:/Students/download/greengram_ver1/
+
+# mybatis setting
+mybatis:
+  mapper-locations: xml/**/*.xml
+
+# Base URL setting
+#server:
+#  servlet:
+#    context-path: /api
+
+spring:
+  application:
+    name: GreenGramVer1
+  # DB setting
+  datasource:
+    url: jdbc:mariadb://localhost:3306/greengram_ver1
+    username: root
+    password: green502
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+springdoc:
+  swagger-ui:
+    default-model-expand-depth: 10
+    display-request-duration: true
+    operations-sorter: method
+    path: /swagger
